@@ -1,0 +1,63 @@
+ARENA FACIL - INSTRUCOES DE ENTREGA
+
+1. Copiar a pasta do projeto
+   Copie a pasta arena-facil para:
+   C:\xampp\htdocs\
+
+2. Importar o banco de dados
+   Abra o MySQL Workbench ou phpMyAdmin e importe o arquivo:
+   arena_facil.sql
+
+   O arquivo cria o banco arena_facil e as tabelas:
+   - usuarios
+   - quadras
+   - reservas
+
+3. Conferir a conexao com o banco
+   Copie o arquivo:
+   api/config/database.example.php
+
+   Para:
+   api/config/database.php
+
+   Depois ajuste a configuracao:
+   host: localhost
+   usuario: root
+   senha: senha do MySQL da maquina
+   banco: arena_facil
+
+   Por seguranca, o arquivo api/config/database.php nao deve ser enviado ao GitHub.
+
+4. Abrir o sistema
+   Inicie Apache e MySQL no XAMPP.
+
+   Acesse:
+   http://localhost/arena-facil/frontend/login.html
+
+5. Usuarios de teste
+   Cliente:
+   email: teste@gmail.com
+   senha: 123
+
+   Proprietario:
+   email: admin@arenafacil.com
+   senha: 123
+
+   Proprietario alternativo:
+   email: joaoteste@gmail.com
+   senha: 123
+
+6. Fluxos principais
+   Cliente:
+   - login
+   - listar quadras
+   - reservar quadra
+   - consultar minhas reservas
+   - cancelar reserva
+
+   Proprietario:
+   - login
+   - cadastrar quadra
+   - listar minhas quadras
+   - excluir quadra
+   - gerenciar reservas das suas quadras

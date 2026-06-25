@@ -1,0 +1,17 @@
+.vscode/
+
+# Configuracao local com senha do banco
+api/config/database.php
+
+# Arquivos do sistema operacional
+Thumbs.db
+Desktop.ini
+
+# Logs e temporarios
+*.log
+*.tmp
+*.bak
+
+# Dependencias, caso sejam adicionadas depois
+node_modules/
+vendor/
