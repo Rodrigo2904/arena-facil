@@ -13,8 +13,12 @@ document.getElementById("nome").value;
 const tipo =
 document.getElementById("tipo").value;
 
-const preco =
+const precoRaw =
 document.getElementById("preco").value;
+
+// Normaliza valor do input (evita "-"/vírgula indo como string estranha)
+const preco = Number(String(precoRaw).replace(',', '.'));
+
 
 const resposta = await fetch(
 
